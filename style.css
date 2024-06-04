@@ -1,0 +1,83 @@
+/* Estilo da página */
+body {
+    background-image: url('https://i.imgur.com/nR4Mor2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Formulário */
+.calculator-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Botão */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Botão flutuante */
+.floating-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Estilo responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+    .calculator-container {
+        padding: 15px;
+    }
+
+    .btn {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator-container {
+        padding: 10px;
+    }
+}
+
+/* Estilo dos ícones */
+.icon-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.icon-container a {
+    margin-right: 15px;
+}
+
+.icon-container a:last-child {
+    margin-right: 0;
+}

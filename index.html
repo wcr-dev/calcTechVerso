@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média Bimestral</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SHB5KT819E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SHB5KT819E');
+    </script>
+</head>
+<body>
+
+    <!-- Botão flutuante -->
+    <div class="floating-btn">
+        <a href="https://www.techverso.dev.br" target="_blank">
+            <img src="https://i.imgur.com/3jzJP76.png" width="50" height="50" alt="TechVerso">
+        </a>
+    </div>
+
+    <!-- Container da Calculadora -->
+    <div class="calculator-container">
+        <h2>Calculadora de Média Bimestral</h2>
+        <form id="gradeForm">
+            <div>
+                <label for="grade1">Atividade Avaliativa:</label>
+            </div>
+            <div>
+                <input type="text" id="grade1" required>
+            </div>
+            <div>
+                <label for="grade2">Prova do Bimestre:</label>
+            </div>
+            <div>
+                <input type="text" id="grade2" required>
+            </div>
+            <button type="button" class="btn" onclick="calculateAverage()">Calcular Média</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <!-- Ícones de Redes Sociais -->
+    <div class="icon-container">
+        <a href="https://chat.whatsapp.com/JONCTfNFkn50vZR04NNw2Y" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" width="50" height="50" alt="WhatsApp">
+        </a>
+        <a href="https://t.me/techversobr" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1200px-Telegram_2019_Logo.svg.png" width="43" height="43" alt="Telegram">
+        </a>
+    </div>
+
+    <script src="jsCalc.js"></script>
+</body>
+</html>
