@@ -2,12 +2,12 @@
 body {
     background-image: url('https://i.imgur.com/nR4Mor2.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     color: white;
     font-family: Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    position: relative;
+    position: relative;	
 }
 
 /* Formulário */
@@ -80,4 +80,33 @@ body {
 
 .icon-container a:last-child {
     margin-right: 0;
+}
+
+#resultGrade, #result { /* Supondo que resultElement tenha um id de resultGrade */
+    display: inline-block;
+    text-align: center; /* Definindo text-align no elemento pai */
+    font-size: 110%;
+    font-weight: bold;
+}
+
+/* Estilo das respostas */
+.result-success {
+    /*text-align-last: center;*/
+    color: lime;
+}
+
+.result-failure {    
+    /*text-align-last: center;*/
+    color: red;
+}
+
+.result-error {    
+    /*text-align-last: center;*/
+    color: yellow;    
+}
+
+.bold-underline {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 110%;
 }
