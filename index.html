@@ -8,6 +8,8 @@
     
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/favicon.ico" type="image/x-icon">
 
     <!-- Meta Tags para Redes Sociais -->
     <meta property="og:type" content="website">
@@ -49,7 +51,7 @@
 
     <!-- Container da Calculadora -->
     <div class="calculator-container">
-        <h2>Calculadora de Média Bimestral</h2>
+        <h2>Calculadora da Média Bimestral</h2>
         <form id="gradeForm">
             <div>
                 <label for="grade1">Atividade Avaliativa:</label>
@@ -67,6 +69,27 @@
         </form>
         <p id="result"></p>
     </div>
+    
+     <!-- Container da Calculadora -->
+    <div class="calculator-container">
+        <h2>Calculadora da Média do Exame</h2>
+        <form id="gradeForm">
+            <div>
+                <label for="grade3">Nota da Média entre AVA e Prova Bimestral:</label>
+            </div>
+            <div>
+                <input type="text" id="grade3" required>
+            </div>
+            <div>
+                <label for="grade4">Nota do Exame:</label>
+            </div>
+            <div>
+                <input type="text" id="grade4" required>
+            </div>
+            <button type="button" class="btn" onclick="calculateGrade()">Calcular Nota</button>
+        </form>
+        <p id="resultGrade"></p>
+    </div>
 
     <!-- Ícones de Redes Sociais -->
     <div class="icon-container">
@@ -78,6 +101,7 @@
         </a>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
     <script src="jsCalc.js"></script>
 </body>
 </html>
